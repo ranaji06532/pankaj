@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<body>
+    <section class="main-wrap">
+        <div class="left-sec fl-lt" id="left" onmouseover="showDirection(this, '#rotationElement')">
+            <figure class="img-left">
+                <img src="images/img-1.png" alt="" class="img-responsive">
+            </figure>
+            <div class="caption-data">
+                Klare Richtung für
+                <span class="clr-type-1">meine Z4hne</span>
+            </div>
+        </div>
+        <div class="compass-sec fl-lt">
+            <div class="compass-bg">
+                <div class="bg-white" id="rotationElement"></div>
+                <div class="jq-rotate" id="jqRotate" onmouseout="getRotate('#jqRotate', '#rotationElement')"></div>
+            </div>
+        </div>
+        <div class="right-sec fl-rt" id="right" onmouseover="showDirection(this, '#rotationElement')">
+            <div class="info-para-type-1">
+                Ihre Zahnarztpraxis in Iserlohn
+                <br> Dr. Ashish Awasthi
+                <br> PHD in Dental
+            </div>
+            <div class="info-para-type-2">
+                Pinnacle business parkchstraße 47
+                <br> B-9 Sector 3
+            </div>
+            <div class="info-para-type-3">
+                Terminvergabe unter
+                <br> 91-7503821118
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="cta-links" id="bottom" onmouseover="showDirection(this, '#rotationElement')">
+            <button class="btn btn-type-1">E-Mail schreiben</button>
+            <button class="btn btn-type-2">Öffnungszeiten</button>
+            <button class="btn btn-type-3">Leistungsspektrum</button>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
